@@ -15,3 +15,5 @@ Frontend
 - Shadcn
 - Tailwind
 - React Router Dom
+- Dotenv
+- Auth0 (Social: Google)
