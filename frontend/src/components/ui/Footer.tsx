@@ -1,4 +1,4 @@
-import { Separator } from "@radix-ui/react-separator";
+import { Separator } from "./separator";
 
 export const Footer = () => {
   return (
@@ -7,7 +7,7 @@ export const Footer = () => {
         <span className="text-3xl text-white font-bold tracking-tight">
           MernEats.com
         </span>
-        <Separator className="bg-gray-400 h-0.5 w-1/3 md:hidden" />
+        <Separator className="md:hidden w-60" />
         <span className="text-white font-bold tracking-tight flex gap-4">
           <span>Privacy Policy</span>
           <span>Terms of Service</span>
