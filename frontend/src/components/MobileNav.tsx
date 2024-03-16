@@ -10,12 +10,15 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { useAuth0 } from "@auth0/auth0-react";
 import { MobileNavLinks } from "./MobileNavLinks";
+import { useState } from "react";
 
 export const MobileNav = () => {
   const { user, isAuthenticated, loginWithRedirect } = useAuth0();
 
+  const [sheetOpen, setSheetOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
       <SheetTrigger>
         <Menu className="text-orange-500" />
       </SheetTrigger>

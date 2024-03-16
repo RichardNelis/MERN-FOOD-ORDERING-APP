@@ -1,6 +1,8 @@
+import { ObjectId } from "mongodb";
 import mongoose from "mongoose";
 
 const userShema = new mongoose.Schema({
+  _id: ObjectId,
   auth0Id: {
     type: String,
     required: true,
